@@ -1,0 +1,15 @@
+<?php
+
+function media_manager_core_field_schema($field) {
+  if ($field['type'] == 'media_manager_core_rgb') {
+      $columns = array(
+        'media_manager' => array(
+          'type' => 'varchar',
+          'length' => 30,
+          'not null' => FALSE,
+        ),
+      );
+  }
+
+  return array('columns' => $columns);
+}
