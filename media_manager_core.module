@@ -70,12 +70,8 @@ function media_manager_core_field_info() {
 /**
  * Implements hook_field_validate().
  *
- * This hook gives us a chance to validate content that's in our
- * field. We're really only interested in the $items parameter, since
- * it holds arrays representing content in the field we've defined.
- * We want to verify that the items only contain RGB hex values like
- * this: #RRGGBB. If the item validates, we do nothing. If it doesn't
- * validate, we add our own error notification to the $errors parameter.
+ * This Validates whether the video exists in Media Manager
+ * and if you have a valid account
  *
  * @see media_manager_core_field_widget_error()
  */
