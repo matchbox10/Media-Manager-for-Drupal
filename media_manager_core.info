@@ -2,4 +2,3 @@ name = Media Manager - core
 description = Connects to media manager
 core = 7.x
 package = Media Manager
-script[] = js/script.js

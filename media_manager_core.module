@@ -128,7 +128,7 @@ function media_manager_core_field_formatter_view($entity_type, $entity, $field, 
     // This formatter simply outputs the field as text and with a color.
     case 'media_manager_core_simple_text':
       foreach ($items as $delta => $item) {
-        //drupal_add_js(drupal_get_path('module', 'media_manager_core') .'/js/script.js', 'file');
+        drupal_add_js(drupal_get_path('module', 'media_manager_core') .'/js/script.js', 'file');
         $theme = array('data' => $item['media_manager']);
         $element[$delta] = array(
           // We create a render array to produce the desired markup,
